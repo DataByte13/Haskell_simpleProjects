@@ -44,5 +44,11 @@ displayInput x = putStrLn ("Input: " ++ show x)
 
 -- Display the sorted list
 main :: IO ()
-main = print sortedList
+main = do 
+  let tmp1 = quick [1]
+      tmp2 = quick [2,7,3,4,6,5,1]
+      tmp3 = quick [10,1,2,3,5]
+  print (tmp1)
+  print (tmp2)
+  print (tmp3)
 

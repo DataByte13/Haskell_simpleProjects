@@ -1,6 +1,6 @@
 sumi :: [[Int]] -> Int
-sumi [] = 0
-sumi (x:xs) = sum x + sumi xs
+sumi [] = 1
+sumi (x:xs) = product x * sumi xs
 
 flatten :: [[Int]] -> [Int]
 flatten [] = []
